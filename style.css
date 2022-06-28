@@ -1,0 +1,242 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 79px;
+    background: #cebedc;
+}
+.menu__title{
+    display: inline-block;
+    padding: 0 18px;
+}
+.menu__header{
+    display: inline-block;
+    width: 30%;
+    padding: 0 15px;
+}
+.menu__list{
+    display: inline-block;
+}
+.menu__list__item{
+    display: inline-block;
+    margin: 0 18px;
+}
+/*Sección Title*/
+
+section.title{
+
+}
+#CV-pdf{
+    cursor: pointer;
+}
+.title__profile{
+    width: 336px;
+    border-radius: 100%;
+    float: right;
+    padding: 8px 79px;
+}
+.title__container{
+    height: 332px;
+    width: 82%;
+    margin: auto;
+    padding: 20px;
+}
+.title__bio{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 37px;
+}
+.title__subsection{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.title__network__item{
+    display: inline-block;
+    margin: 23px 26px;
+}
+.title__network__item:hover ,.menu__list__item:hover{
+    text-decoration: underline;
+}
+/*Sección About*/
+
+section.about{
+    background: #EAF2FD;
+}
+.about__container{
+    width: 70%;
+    margin: auto;
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.skills,section.hobbies{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 33px 0;
+}
+.skills__box,.hobbies__box{
+    display: inline-block;
+    margin: 11px 11px;
+    background: white;
+    width: 104px;
+    border-radius: 10px;
+}
+.skills__box ul, .hobbies__box ul{
+    padding: 0;
+}
+
+
+/* Experiencia Académica*/
+
+section.academic{
+    background: #EAF2FD;
+    text-align: center;
+}
+.academic__title{
+    margin: 18px 0;
+    display: inline-block;
+}
+.academic__courses__box{
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    width: 265px;
+    margin: 10px 10px;
+}
+.academic__courses__box ul{
+    padding: 0;
+}
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+/* modal  */
+/* modal CV */
+.pdf-view{
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-pdf{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#cerrar{
+    width: 26px;
+    cursor: pointer;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
